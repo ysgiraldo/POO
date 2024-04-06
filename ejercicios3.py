@@ -33,4 +33,4 @@ print(vegeta)
 print(jiren)
 print(gogeta)
 
-## crar un nuevo juego en el que el usuario pueda interactuar
+## crear un nuevo juego en el que el usuario pueda interactuar

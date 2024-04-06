@@ -3,15 +3,15 @@
 import openai
 openai.api_key = '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'
 system_rol = '''Hace de cuenta que sos un analizador de sentimientos.
-                 Yo te paso sentimientos y vos analizas el sentimiento de 
-                 de los mensajes y me das una respuesta con al menos 1 caracter y
-                 como máximo 4 caracteres SOLO RESPUESTAS NÚMERICAS. Donde -1 es negatividad
-                 máxima, 0 es neutral y 1 es positividad máxima. 
-                 Podes ir entre esos rango, es decir 0.3, -0.5 etc tambien son validos
-                 (Podés solo responder con ints o floats)'''
+                Yo te paso sentimientos y vos analizas el sentimiento de 
+                de los mensajes y me das una respuesta con al menos 1 caracter y
+                como máximo 4 caracteres SOLO RESPUESTAS NÚMERICAS. Donde -1 es negatividad
+                máxima, 0 es neutral y 1 es positividad máxima. 
+                Podes ir entre esos rango, es decir 0.3, -0.5 etc tambien son validos
+                (Podés solo responder con ints o floats)'''
 
 mensajes = [{"role":"system",
-             "content" : system_rol}]
+            "content" : system_rol}]
 
 
 class Sentimiento:
@@ -56,7 +56,7 @@ while True:
     respuesta = completion.choices[0].message["content"]
 
     mensajes.append({"role":"assistant",
-                     "content": respuesta})
+                    "content": respuesta})
     
     sentimiento = analizador.analizar_sentimientos(float(respuesta))
     print(sentimiento)

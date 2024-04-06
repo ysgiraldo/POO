@@ -15,7 +15,7 @@ class AnalizadorDeSentimientos:
             return 'Neutral'
         else:
             return 'Negativo'
-        
+
 analizador = AnalizadorDeSentimientos()
 resultado = analizador.analizar_sentimiento('Hello its me') # La libreria entiende ingles
 print(resultado)
