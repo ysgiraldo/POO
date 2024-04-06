@@ -18,10 +18,11 @@ class Empleado(Persona):
         super().__init__(nombre, edad, nacionalidad)
         self.trabajo = trabajo
         self.salario = salario
-
+    '''Este sobreescribe el metodo hablar de la clase padre'''
     # def hablar(self):
     #     print('NO')
 
 persona = Empleado('Roberto',43,'colombiano', 'Programador', 100000)
-print(persona.salario)
+print(persona.nacionalidad)
+print(persona.trabajo)
 persona.hablar()
