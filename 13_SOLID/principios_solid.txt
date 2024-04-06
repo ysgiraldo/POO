@@ -1,0 +1,13 @@
+'''
+1. Mantenibilidad
+2. Reusabilidad
+3. Legibilidad
+4. Extensibilidad
+
+SOLID
+S -> SRP, principio de responsabilidad unico
+O -> OCP, principio de abierto/cerrado
+L -> LSP, principio de sustitucion de liskov
+I -> ISP, principio de segregacion de interfaz
+D -> DIP, principio de inversion de dependencias
+'''
