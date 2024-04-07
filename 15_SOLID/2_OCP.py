@@ -1,7 +1,8 @@
 '''
-abiertas para la extension pero cerradas para la modificacion
-deberiamos poder agregarle nuevas funcionalidades sin tener que cambiar
-el codigo fuente de esta clase o de las entidades como tal
+El principio de abierto/cerrado nos dice que una clase deberia estar abierta
+para la extension pero cerrada para la modificacion, es decir, deberiamos
+poder agregar nuevas funcionalidades sin tener que cambiar el codigo fuente
+de esta clase o de las entidades como tal. 
 '''
 #programa extensible
 class Notificador:
