@@ -6,6 +6,10 @@ Vamos a tener dos clases principales Persona y Estudiante.
 Persona tendrá atributos de nombre y edad y un método que imprima el nombre y la edad de la persona
 Estudiante heredará de la clase Persona y tendrá un atributo adicional, grado y un método que imprima
 el grado del estudiante
+
+Clases -> Persona, Estudiante
+Atributos Persona -> nombre, edad
+Atributos Estudiante -> grado + lo que hereda de Persona (nombre, edad)
 '''
 
 class Persona:
@@ -39,7 +43,18 @@ animal debe tomar un metodo llamado comer
 mamifero debe tener un metodo llamado amamantar
 ave debe tener un metodo llamado volar
 
-crear una clase murcielago que herede de mamifero y ave , amamantar y colar además de comer
+crear una clase murcielago que herede de mamifero y ave , amamantar y volar además de comer
+
+----------------------------------------------------------------------------------------------------------------
+Clase Padre -> Animal
+Clases hijas -> Mamifero, Ave
+Clase Hija de Herencia Multiple -> Murcielago
+
+Atributos Animal -> comer
+Atributos Mamifero -> amamantar + lo que hereda de Animal(comer)
+Atributos Ave -> volar + lo que hereda de Animal(comer)
+Atributos Murcielago -> comer + lo que hereda de Mamifero y Ave (recordar ave y mamifero heredan de animal)
+----------------------------------------------------------------------------------------------------------------
 '''
 
 

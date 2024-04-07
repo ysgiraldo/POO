@@ -58,5 +58,5 @@ d = D()
 d.hablar()
 F.hablar(D()) # esta llamando la clase y el objeto
 A.hablar(d)
-print(D.mro()) # orden de clases que se ejecutan
+print(D.mro()) # muestra el orden de clases que se ejecutan
 
