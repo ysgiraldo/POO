@@ -44,6 +44,10 @@ autito.mover(60)
 print(autito.obtener_posicion())
 autito.mover(100)
 print(autito.obtener_posicion())
-autito.mover(1)
+autito.mover(100)
 print(autito.obtener_posicion())
 
+'''
+la clase auto tiene dos responsabilidades, mover el auto y si no se puede verificar el combustible
+la clase tanque tiene una responsabilidad, manejar el combustible
+'''
