@@ -26,10 +26,26 @@ class Personaje:
     def morir(self):
         self.vida = 0
         print(self.nombre, 'ha muerto')
+
+    def danio(self, enemigo):
+        return self.fuerza - enemigo.defensa
+    
+    def atacar(self, enemigo):
+        danio = self.danio(enemigo)
+        enemigo.vida=enemigo.vida - danio
+        print(self.nombre, 'ha realizado', danio, 'puntos de daño a', enemigo.nombre)
+        if enemigo.esta_vivo():
+            print('La vida de', enemigo.nombre, 'es', enemigo.vida)
+        else:
+            enemigo.morir()
         
 mi_personaje = Personaje('Bitboss',10,1,5,100) # Constructor
+mi_enemigo = Personaje('Goblin',8,5,3,5)
 # print(mi_personaje)
 # print(mi_personaje.nombre) 
-mi_personaje.atributos()
-mi_personaje.subir_nivel(1,2,0)
-mi_personaje.atributos()
+# mi_personaje.atributos()
+# mi_personaje.subir_nivel(1,2,0)
+# mi_personaje.atributos()
+# print(mi_personaje.danio(mi_enemigo))
+mi_personaje.atacar(mi_enemigo)
+mi_enemigo.atributos()
