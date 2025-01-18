@@ -22,6 +22,10 @@ class Personaje:
     
     def esta_vivo(self):
         return self.vida>0
+    
+    def morir(self):
+        self.vida = 0
+        print(self.nombre, 'ha muerto')
         
 mi_personaje = Personaje('Bitboss',10,1,5,100) # Constructor
 # print(mi_personaje)
