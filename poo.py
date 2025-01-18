@@ -19,6 +19,9 @@ class Personaje:
         self.fuerza = self.fuerza + fuerza
         self.inteligencia = self.inteligencia + inteligencia
         self.defensa = self.defensa + defensa
+    
+    def esta_vivo(self):
+        return self.vida>0
         
 mi_personaje = Personaje('Bitboss',10,1,5,100) # Constructor
 # print(mi_personaje)
